@@ -233,12 +233,14 @@
   %\fancyhead[CO]{\song\wuhao \@cheading}
   %\fancyhead[CE]{\song\wuhao \@cheading}
   \fancyfoot[C]{\song\xiaowu ~\thepage~}
+  \renewcommand{\headrulewidth}{0.7pt}%
+  \renewcommand{\footrulewidth}{0pt}%
 
 \fancypagestyle{plain}{% 设置开章页页眉页脚风格
     \fancyhf{}%
     \fancyhead[C]{\song\wuhao \leftmark}
     \fancyfoot[C]{\song\xiaowu ~\thepage~ } %%首页页脚格式
-    \renewcommand{\headrulewidth}{0.5pt}%
+    \renewcommand{\headrulewidth}{0.7pt}%
     \renewcommand{\footrulewidth}{0pt}%
 }
 
