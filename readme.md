@@ -73,9 +73,9 @@ Modified for the new format requirements of the 2016 Master's thesis of Tianjin 
  
 4. 重新编译。
  
-#### 如何修改
+#### 自定义修改样式
  
-由于文档中有些格式并没有严格要求或者有不同的理解，这里给出一些提示供参考：
+由于文档中有些格式并没有严格要求或者有不同的理解，如需更改样式，可以参考这里给出的一些提示：
  
 + 文档要求”双面打印，且各章节从奇数页开始“。此版本的摘要、封面、扉页等都从奇数页开始，如有空白的偶数页，页眉页脚设置为空。主要涉及以下代码：
     - `\documentclass[12pt,openright,twoside]{book}`
