@@ -61,14 +61,17 @@ Modified for the new format requirements of the 2016 Master's thesis of Tianjin 
 如果已经使用了之前的latex模板，可以通过以下步骤更新为此版本的格式：
  
 1. 使用此版本下的以下文件替换（覆盖）旧版本的同名文件：
+
     + ./TJUThesis.bst
     + ./setup/format.tex
     + ./setup/package.tex
  
 2. 修改文件./tjumain.tex
+
     复制旧版本./tjumain.tex中正文部分的多个`\include{body/yourchapter}`（当前论文的各个章节），分别填入此版本./tjumain.tex的相应位置，然后替换旧版本的./tjumain.tex。（如有需要可以注释掉47行：`\nocite{*}`）
  
 3. 修改文件./preface./cover.tex
+
     将旧版本中文件./preface./cover.tex的各项目（标题、姓名、摘要...）依次填入此版本的同名文件的相应位置，然后替换旧版本的./preface./cover.tex。（非工程硕士自行修改）
  
 4. 重新编译。
