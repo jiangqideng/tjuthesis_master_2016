@@ -71,7 +71,7 @@
 \renewcommand{\contentsname}{目\qquad录}
 \setcounter{tocdepth}{2}
 \titlecontents{chapter}[0em]{\vspace{0pt}\xiaosi\song\bfseries}%
-             {\prechaptername\CJKnumber{\thecontentslabel}\postchaptername\quad}{} %
+             {\prechaptername\thecontentslabel\postchaptername\quad}{} %
              {\hspace{.5em}\titlerule*[7pt]{.}\xiaosi\contentspage}
 \titlecontents{section}[2em]{\vspace{0pt}\xiaosi\song} %
             {\thecontentslabel\quad}{} %
@@ -86,7 +86,7 @@
 %%%%%%%%%% Chapter and Section %%%%%%%%%%%%%%%%% 各级标题样式（（天津大学关于博士、硕士学位论文统一格式的规定 2016.10.24））
 \setcounter{secnumdepth}{4}
 \setlength{\parindent}{2em}
-\renewcommand{\chaptername}{\prechaptername\CJKnumber{\thechapter}\postchaptername}
+\renewcommand{\chaptername}{\prechaptername\thechapter\postchaptername}
 \titleformat{\chapter}{\centering\xiaosan\hei}{\chaptername}{1em}{}
 \titlespacing{\chapter}{0pt}{33pt}{33pt}
 \titleformat{\section}{\sihao\hei}{\thesection}{1em}{}
@@ -256,7 +256,7 @@
 \def\@put@covertitle#1{\makebox[\@title@width][s]{#1}}
 % 定义封面
 \def\makecover{
-\clearpage{\pagestyle{empty}\cleardoublepage} 
+\clearpage{\pagestyle{empty}\cleardoublepage}
    \phantomsection
     \pdfbookmark[-1]{\@ctitle}{ctitle}
 
